@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/main.css" th:href="@{../static/main.css}">
+
+  <title>Input</title>
+</head>
+<body>
+<h2>Rock Paper Scissors!?</h2>
+<form action="Input" th:action="@{Output}">
+<p>
+
+    <label for="rock">Rock</label>
+    <img src="C:\Users\Khushali\Desktop\java 3 new\RockPaperScissor\src\main\resources\templates\Images\rock.jpg">
+    <input type="radio" id="rock" th:name="btn"><br>
+
+    <label for="paper">Paper</label>
+    <img src="C:\Users\Khushali\Desktop\java 3 new\RockPaperScissor\src\main\resources\templates\Images\paper.jpg">
+    <input type="radio" id="paper" th:name="btn"><br>
+
+    <label for="scissors">Scissors</label>
+    <img src="C:\Users\Khushali\Desktop\java 3 new\RockPaperScissor\src\main\resources\templates\Images\scissors.jpg">
+    <input type="radio" id="scissors" th:name="btn">
+    <hr>
+    <input type="submit" id="submit" value="submit" >
+</p>
+</form>
+</body>
+</html>
